@@ -1,0 +1,118 @@
+  
+  <div class="iphone">
+  <div class="all-contact"> 
+    
+        <div class="contact">
+            <div class="contact-screen">
+             <div class="top-button">
+              <p>Cancel</p>
+              <span>New Contact</span>
+              <button (click)="addbtn()">Done</button>
+             </div>
+
+              
+              <div class="all-inpute">
+              <input type="text"  [(ngModel)]="display">
+               
+             <input type="text" [(ngModel)]="nickName">
+              
+              <input type="text" [(ngModel)]="phoneNumber">
+
+              </div> 
+               <!-- <p>{{name}}</p> -->
+
+               <div *ngFor="let infos of info; let i = index" class="diplay-body">
+                <p>{{i+1}}</p>
+              
+                 <div class="flex gap-2">
+         
+           <p id="p">{{infos}} <button (click)="del(i)">delete</button> </p>
+           <p>{{display}} <button (click)="del(i)">delete</button> </p>
+           <p>{{nickName}} <button (click)="del(i)">delete</button> </p>
+           <p>{{phoneNumber}} <button (click)="del(i)">delete</button> </p>
+          
+          
+         
+             <button  class="bg-red-500 rounded p-1" (click)="edit(i)"> edit</button>
+         
+         
+                 </div>
+          
+                </div>
+            
+          
+         <!-- edit section -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+         
+ <!-- edit section end       -->
+     
+
+          </div>
+        </div>
+         
+  </div>
+ 
+
+    <div class="screen"></div>
+      <div class="icons">
+        <div class="app-1">
+           
+        </div>
+        <div class="app-1">
+          
+          
+
+        </div>
+        <div class="app-2"></div>
+        <div class="app-3"></div>
+      </div>
+        <div class="icons">
+        <div class="app-4"></div>
+        <div class="app-5"></div>
+        <div class="app-6"></div>
+        <div class="app-7"></div>
+      </div>
+
+        <div class="icons">
+        <div class="app-8"></div>
+        <div class="app-9"></div>
+        <div class="app-10"></div>
+        <div class="app-11"></div>
+      </div>
+
+
+        <div class="buttom-icon">
+        
+            <div class="app-12"></div>
+
+            <div  class="app-13">2</div>
+            <div class="app-14">3</div>
+            <div class="app-15">4</div>
+          
+        </div>
+        
+    <div class="notch">
+      
+      <div class="camera"></div>
+      <div class="speaker"></div>
+    </div>
+    
+
+  
